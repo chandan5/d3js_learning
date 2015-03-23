@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D3</title>
+	<style type="text/css">
+	.par
+	{
+		width: 70%;
+		height: 10%;
+	}
+	</style>
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="d3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		y = d3.selectAll("p").style("color", "blue");
+		console.log(y);
+		/*
+		d3.selectAll("p").style("color", function() {
+  			return "hsl(" + Math.random() * 360 + ",100%,50%)";
+		});*/
+	/*	d3.select("body").selectAll("p")
+	    .data([4, 8, 15, 16, 23, 42])
+		  .enter().append("p")
+		      .text(function(d) { return "I’m number " + d + "!"; });
+		console.log(1);		
+	*/});
+	</script>
+</head>
+<body>
+	<p class="par">ABC asdj kjasf</p>
+	<p class="par">SSF askhas ifb aisufas</p>
+	<p class="par">ASD kjasfn </p>
+</body>
+</html>
